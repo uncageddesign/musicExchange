@@ -1,17 +1,21 @@
 package Paraphenalia;
 
-public abstract class Accessories {
+import behaviours.ISell;
+
+public abstract class Accessories implements ISell {
 
     private String brand;
     private Double boughtPrice;
     private Double sellingPrice;
     private String category;
+    private InstrumentType instrumentType;
 
-    public Accessories(String brand, Double boughtPrice, Double sellingPrice, String category){
+    public Accessories(String brand, Double boughtPrice, Double sellingPrice, String category, InstrumentType instrumentType){
         this.brand = brand;
         this.boughtPrice = boughtPrice;
         this.sellingPrice = sellingPrice;
         this.category = category;
+        this.instrumentType = instrumentType;
     }
 
     public String getBrand() {
@@ -28,5 +32,13 @@ public abstract class Accessories {
 
     public String getCategory() {
         return category;
+    }
+
+    public Double calculateMarkUp() {
+        return this.sellingPrice - this.boughtPrice;
+    }
+
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
     }
 }

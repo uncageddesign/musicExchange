@@ -1,6 +1,6 @@
 package instruments;
 
-public class Woodwind extends Instrument{
+public class Woodwind extends Instrument {
 
     private String reed;
     private String type;
@@ -18,4 +18,5 @@ public class Woodwind extends Instrument{
     public String getType() {
         return type;
     }
+
 }

@@ -1,5 +1,6 @@
 package paraphenaliaTests;
 
+import Paraphenalia.InstrumentType;
 import Paraphenalia.SheetMusic;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class SheetMusicTest {
 
     @Before
     public void setUp(){
-        sheetMusic = new SheetMusic("Music Sales", 4.00, 14.99, "Books", "Various", "The Buskers Songbook", "Acoustic");
+        sheetMusic = new SheetMusic("Music Sales", 4.00, 14.99, "Books", "Various", "The Buskers Songbook", "Acoustic", InstrumentType.GUITAR);
     }
 
     @Test

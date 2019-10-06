@@ -1,6 +1,7 @@
 package paraphenaliaTests;
 
 import Paraphenalia.Amplifier;
+import Paraphenalia.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class AmplifierTest {
 
     @Before
     public void setUp(){
-        amplifier = new Amplifier("Marshall", 120.00, 170.00, "Amplifiers", "MG30FX", "Combo", 10);
+        amplifier = new Amplifier("Marshall", 120.00, 170.00, "Amplifiers", "MG30FX", "Combo", 10, InstrumentType.GUITAR);
     }
 
     @Test

@@ -1,6 +1,9 @@
 package instruments;
 
-public abstract class Instrument {
+import behaviours.IPlay;
+import behaviours.ISell;
+
+public abstract class Instrument implements ISell {
 
     private String make;
     private String model;
@@ -52,5 +55,9 @@ public abstract class Instrument {
 
     public String getColour() {
         return colour;
+    }
+
+    public Double calculateMarkUp() {
+        return this.sellingPrice - this.boughtPrice;
     }
 }

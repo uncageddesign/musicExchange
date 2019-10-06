@@ -19,8 +19,4 @@ public class Piano extends Percussion implements IPlay, ISell {
     public int getPorts() {
         return ports;
     }
-
-    public Double calculateMarkUp() {
-        return this.getSellingPrice() - this.getBoughtPrice();
-    }
 }

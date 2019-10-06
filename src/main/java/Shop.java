@@ -35,14 +35,11 @@ public class Shop {
     }
 
     public Double totalMarkUp(){
-        //loop through stock array
         Double total = 0.00;
-        for(int i = 0; i < stock.size(); i++){
-            //calculate the markup for each item
-            Double item = stock.getSellingPrice() - stock.getBoughtPrice();
-            double newTotal = total + item;
+        for (ISell item: this.stock){
+            total += item.calculateMarkUp();
         }
-        //add together and return
         return total;
     }
+
 }

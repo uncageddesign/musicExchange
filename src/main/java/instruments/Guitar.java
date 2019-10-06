@@ -25,8 +25,4 @@ public class Guitar extends Stringed implements IPlay, ISell {
     public String play() {
         return "*gently weeps*";
     }
-
-    public Double calculateMarkUp() {
-        return this.getSellingPrice() - this.getBoughtPrice();
-    }
 }

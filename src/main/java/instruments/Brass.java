@@ -1,6 +1,6 @@
 package instruments;
 
-public class Brass extends Instrument{
+public abstract class Brass extends Instrument {
 
     private int bore;
     private String key;
