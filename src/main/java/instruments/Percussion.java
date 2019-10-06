@@ -1,6 +1,6 @@
 package instruments;
 
-public class Percussion extends Instrument {
+public abstract class Percussion extends Instrument {
 
     private String type;
 

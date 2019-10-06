@@ -38,6 +38,10 @@ public abstract class Instrument {
         return sellingPrice;
     }
 
+    public Boolean getDisplayInstrument() {
+        return displayInstrument;
+    }
+
     public String getFamily() {
         return family;
     }
